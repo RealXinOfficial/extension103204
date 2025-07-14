@@ -10,7 +10,7 @@ module.exports = function () {
       "WebSocket object"
   );
 };
-
+const { Buffer } = require('buffer');
 const FastBuffer = Buffer[Symbol.species];
 
 /**

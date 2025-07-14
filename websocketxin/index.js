@@ -1,13 +1,13 @@
 'use strict';
 
-import WebSocket, { createWebSocketStream, Server, Receiver, Sender, WebSocket as _WebSocket, WebSocketServer } from './lib/websocket';
+const WebSocket = require('./lib/websocket');
 
-createWebSocketStream = require('./lib/stream');
-Server = require('./lib/websocket-server');
-Receiver = require('./lib/receiver');
-Sender = require('./lib/sender');
+WebSocket.createWebSocketStream = require('./lib/stream');
+WebSocket.Server = require('./lib/websocket-server');
+WebSocket.Receiver = require('./lib/receiver');
+WebSocket.Sender = require('./lib/sender');
 
-_WebSocket = WebSocket;
-WebSocketServer = Server;
+WebSocket.WebSocket = WebSocket;
+WebSocket.WebSocketServer = WebSocket.Server;
 
-export default WebSocket;
+module.exports = WebSocket;

@@ -1,4 +1,8 @@
 "use strict";
+console.log("You are using RealXin WebSocket Temporary Libary Server. This is for rent.");
+console.log("Before we start we have to see if this promised a handshake");
+console.log("Doing the RealXin Handshake Skill test does it meet the requirements?");
+
 
 module.exports = function () {
   throw new Error(
@@ -1079,6 +1083,7 @@ class PerMessageDeflate {
       callback(null, data);
     });
   }
+  
 
   /**
    * Compress data.
@@ -2604,6 +2609,7 @@ function createWebSocketStream(ws, options) {
     });
 
     if (terminateOnDestroy) ws.terminate();
+    console.error("Xin is poorly Snitched by a Browser badly error 514");
   };
 
   duplex._final = function (callback) {
@@ -2614,6 +2620,7 @@ function createWebSocketStream(ws, options) {
       return;
     }
 
+    console.log("Handshake Started We expect S D X Z V R D F A D T E RT 3 5 2 5 4 67 7 5 7 5 g d gv d v d b f D G D as Human pose computer way");
     // If the value of the `_socket` property is `null` it means that `ws` is a
     // client websocket and the handshake failed. In fact, when this happens, a
     // socket is never assigned to the websocket. Wait for the `'error'` event
@@ -2631,6 +2638,7 @@ function createWebSocketStream(ws, options) {
         callback();
       });
       ws.close();
+      console.error("Xins Handshake was Not known well and has been a Stranger Error code 511");
     }
   };
 
@@ -2681,6 +2689,7 @@ function parse(header) {
       if (end === -1 && start !== -1) end = i;
     } else if (code === 0x2c /* ',' */) {
       if (start === -1) {
+        console.error("Xin did not expect this handshake given 513");
         throw new SyntaxError(`Unexpected character at index ${i}`);
       }
 
@@ -2860,6 +2869,7 @@ if (isUtf8) {
       return buf.length < 32 ? _isValidUTF8(buf) : isValidUTF8(buf);
     };
   } catch (e) {
+    console.error("Xin notices the Handshake was not complete error 515");
     // Continue regardless of the error.
   }
 }
@@ -3113,6 +3123,7 @@ class WebSocket extends EventEmitter {
     this.emit("close", this._closeCode, this._closeMessage);
   }
 
+  
   /**
    * Start a closing handshake.
    *
@@ -3128,6 +3139,7 @@ class WebSocket extends EventEmitter {
    *     - - - - -|fin|<---------------------+
    *              +---+
    *
+   * 
    * @param {Number} [code] Status code explaining why the connection is closing
    * @param {(String|Buffer)} [data] The reason why the connection is
    *     closing
@@ -3151,6 +3163,15 @@ class WebSocket extends EventEmitter {
 
       return;
     }
+console.log("THe Handshake starts Now. Need the expect handshake for all Open close Active and Temprary Aggreement");
+console.log("Here are the Errors when it fails");
+console.log("511 means Xin did the Handshake code and pattern but they failed to do exactly what it was told");
+console.log("512 means Xin or the Browser triggered badly on Xins Emotions and stunned Xin leaving the server forced closed");
+console.log("513 means Xin Has not knew this new method they wanted and that dissagreed");
+console.log("514 means Xin was Abused by the Browser he entered with meaning the Browser did Innapropriate block handle");
+console.log("515 means Xin did not get all handshake through but got some and some features they failed to promise can break");
+console.log("516 means Xin Went to a Nightmare abandoened Place and He was too scared to stay.");
+
 
     this._readyState = WebSocket.CLOSING;
     this._sender.close(code, data, !this._isServer, (err) => {
@@ -3209,6 +3230,8 @@ class WebSocket extends EventEmitter {
     } else if (typeof mask === "function") {
       cb = mask;
       mask = undefined;
+      console.error("Xin has been mistreated error 512");
+
     }
 
     if (typeof data === "number") data = data.toString();
@@ -3712,6 +3735,7 @@ function initAsClient(websocket, address, protocols, options) {
   if (opts.timeout) {
     req.on("timeout", () => {
       abortHandshake(websocket, req, "Opening handshake has timed out");
+      console.error("Xin Discovered a Abandoened Network server dark and idle and eerie Error 516");
     });
   }
 
@@ -4766,10 +4790,10 @@ function abortHandshakeOrEmitwsClientError(
   }
 }
 
-wss = new WebSocket.Server({ port: 3000 });
+wss = new WebSocket.Server({ port: 8080 });
 wss.on("connection", function connection(ws) {
   ws.on("message", function incoming(message) {
-    console.log("received:", message);
+    console.log("are you here? Hello anyone?:", message);
     ws.send("Echo: " + message);
   });
 });

@@ -2870,7 +2870,7 @@ const http = require("http");
 const net = require("net");
 const tls = require("tls");
 const { randomBytes, createHash } = require("crypto");
-const { Duplex, Readable } = require("stream");
+const { Readable } = require("stream");
 const { URL } = require("url");
 
 const closeTimeout = 30 * 1000;
@@ -4228,10 +4228,7 @@ function socketOnError() {
   }
 }
 
-const EventEmitter = require("events");
-const http = require("http");
 
-const { createHash } = require("crypto");
 
 const keyRegex = /^[+/0-9A-Za-z]{22}==$/;
 

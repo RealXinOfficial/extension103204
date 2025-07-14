@@ -4797,3 +4797,8 @@ wss.on("connection", function connection(ws) {
     ws.send("Echo: " + message);
   });
 });
+
+console.log("THanks for using RealXin Websocket Temporary Rentals COme back soon for your new room server rental");
+console.log("We would like to give a reminder that Our rooms DATA server only runs runtime and on Your Com RAM and VRAM");
+console.log("When it gets closed disconnected or removed server port all data is deleted.");
+console.log("We recommend the MAX JSON or Plain text to be 1 128 000 bytes and 30 players per server active.");

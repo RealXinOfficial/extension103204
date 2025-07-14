@@ -2498,7 +2498,7 @@ function onError(sender, err, cb) {
   callCallbacks(sender, err, cb);
   sender.onerror(err);
 }
-const { Duplex } = require("stream");
+
 
 /**
  * Emits the `'close'` event on a stream.
@@ -4230,7 +4230,7 @@ function socketOnError() {
 
 const EventEmitter = require("events");
 const http = require("http");
-const { Duplex } = require("stream");
+
 const { createHash } = require("crypto");
 
 const keyRegex = /^[+/0-9A-Za-z]{22}==$/;
